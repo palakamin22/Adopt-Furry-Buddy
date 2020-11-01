@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adopt_furry_buddy/model/comment_model.dart';
+import 'package:intl/intl.dart';
 import 'package:adopt_furry_buddy/model/user_model.dart';
 
 class PostModel {
@@ -21,5 +22,5 @@ class PostModel {
     @required this.views,
     @required this.comments,
   });
-
+  String get postTimeFormatted => DateFormat.yMMMMEEEEd().format(postTime);
 }

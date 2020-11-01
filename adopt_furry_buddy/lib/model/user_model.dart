@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:intl/intl.dart';
 class UserModel {
   final String id;
   final String name;
@@ -18,5 +18,5 @@ class UserModel {
     @required this.joined,
     @required this.posts,
   });
-
+  String get postTimeFormatted => DateFormat.yMMMMEEEEd().format(joined);
 }

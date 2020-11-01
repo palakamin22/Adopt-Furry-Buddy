@@ -15,7 +15,11 @@ class PostTimeStamp extends StatelessWidget {
   Widget build(BuildContext context) {
     final PostModel postData = InheritedPostModel.of(context).postData;
     final TextStyle timeTheme = TextThemes.dateStyle;
-
+    return Container(
+      width: double.infinity,
+      alignment: alignment,
+      child: Text(postData.postTimeFormatted, style: timeTheme),
+    );
 
   }
 }

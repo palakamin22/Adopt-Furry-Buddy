@@ -22,5 +22,9 @@ void main() {
           await tester.pumpWidget(testWidget);
           expect(find.byType(Container), findsOneWidget);
         });
+    testWidgets("Formatted Date Time", (WidgetTester tester) async {
+      await tester.pumpWidget(testWidget);
+      expect(find.text(_postData.postTimeFormatted), findsOneWidget);
+    });
   });
 }

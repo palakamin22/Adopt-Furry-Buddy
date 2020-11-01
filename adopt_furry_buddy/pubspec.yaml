@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  intl: ^0.16.1
   flutter:
     sdk: flutter
 
@@ -45,11 +46,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-   assets:
-     - assets/image/user.jpg
-     - assets/image/post.jpg
-     - assets/image/post2.jpg
-     - assets/image/post3.jpg
+  assets:
+     - assets/image/user.png
+     - assets/image/post.png
+     - assets/image/post2.png
+     - assets/image/post3.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
