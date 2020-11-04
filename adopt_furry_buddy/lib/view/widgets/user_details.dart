@@ -55,7 +55,7 @@ class _UserImage extends StatelessWidget {
     final UserModel userData = InheritedUserModel.of(context).userData;
     return Expanded(
       flex: 1,
-      child: CircleAvatar(child: Image.asset(userData.image)),
+      child: Container(),
     );
   }
 }
